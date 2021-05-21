@@ -1,12 +1,13 @@
 {
   "name": "vue-sample",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
+    "build-library": "vue-cli-service build --target lib --name vue-simple ./src/install.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.2.0",
+    "vuedraggable": "^2.24.3",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
